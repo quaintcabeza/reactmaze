@@ -26,3 +26,10 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+canvas {
+  display: block;
+  background-color: #e8e8e8;
+  margin-left: auto;
+  margin-right: auto;
+}
