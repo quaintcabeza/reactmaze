@@ -46,12 +46,21 @@ class GeneratorState {
     }).toList()
 
     if (unvisitedNeighbors.isEmpty()) {
+      // 1. visit current cell
+      // 2. profit
       return this.visit(current)
     }
     else {
       // Get a random unvisited neighbor
       const randomNeighbor = Util.getRandomElement(unvisitedNeighbors)
-      return this.visit(current).connect(current, randomNeighbor).dfs(randomNeighbor).dfs(current)
+
+      // TODO
+      // 1. visit current cell
+      // 2. connect current cell and random neighbor
+      // 3. run dfs on random neighbor
+      // 4. rerun dfs on current cell
+      // 5. profit
+      return this // REPLACE THIS
     }
   }
 }
