@@ -1,0 +1,13 @@
+version: '2'
+services:
+        app:
+                image: node:latest
+                user: node
+                volumes:
+                        - ./:/home/node/app
+                working_dir: /home/node/app
+                expose:
+                        - 3000
+                environment:
+                        - NODE_ENV=production
+                command: "npm start"
